@@ -11,7 +11,7 @@ typedef struct List_t List;
 //! @return	 0 if pLhs == pRhs, >0 if pLhs > pRhs, and <0 if pLhs < pRhs
 typedef int(*ListComparator)(void* pLhs, void* pRhs, void* pUserData);
 typedef void(*ForEachCallback)(void* pData, void* pUserData);
-typedef void(*Destructor)(void* pData);
+typedef void(*Destructor)(void* pData, void* pUserData);
 
 void* ListNode_getData(ListNode* pNode);
 ListNode* ListNode_getNext(ListNode* pNode);
@@ -20,7 +20,7 @@ void* ListNode_remove(ListNode* pNode);
 
 List* List_Create();
 void List_Destroy(List* pList);
-void List_DestroyWithDestructor(List* pList, Destructor destructor);
+void List_DestroyWithDestructor(List* pList, Destructor destructor, void* pUserData);
 
 ListNode* List_getHead(List* pList);
 

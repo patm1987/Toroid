@@ -10,6 +10,6 @@ Game Idea
 * Control initially with keyboard - integrate sphero in the future
 * tube initially linear, expand to a spline
 * add pertubations in tube
-* * Bumps
-* * Holes in the tube
-* * Walls blocking off sections
+** Bumps
+** Holes in the tube
+** Walls blocking off sections
