@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{c66890a3-ab29-489d-9ba2-dc6b48da7a47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="messaging">
+      <UniqueIdentifier>{6f052b62-4819-49e3-8472-7769a5bbf365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glwindow">
+      <UniqueIdentifier>{24444056-5fa3-463f-b43b-4d2d309ebf53}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c" />
+    <ClCompile Include="utils\list.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="messaging\messaging.c">
+      <Filter>messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="glwindow\glwindow.c">
+      <Filter>glwindow</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils\list.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\memoryUtils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="messaging\messaging.h">
+      <Filter>messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="messaging\messages.h">
+      <Filter>messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="glwindow\glwindow.h">
+      <Filter>glwindow</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
