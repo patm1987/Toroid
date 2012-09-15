@@ -38,16 +38,16 @@ Coding Style:
 * Inter-object communication should go through the event system when at all possible
 	* primary exception being platform dependent communication between subsystems (ex: glWindow raising a keyboard event directly)
 * Enumerations should be of the form:
-	> typedef EnumName_t
-	> {
-	>	EnumName_Invalid = -1, // optional
-	>	EnumName_Elem0 = 0,
-	>	EnumName_Elem1,
-	>	EnumName_Elem2,
-	>	// &c.
-	>	
-	>	EnumName_Count
-	> } EnumName;
+	typedef EnumName_t
+	{
+		EnumName_Invalid = -1, // optional
+		EnumName_Elem0 = 0,
+		EnumName_Elem1,
+		EnumName_Elem2,
+		// &c.
+		
+		EnumName_Count
+	} EnumName;
 * naming:
 	* '_' only used to indicate classes/modules (grouping) or enumeration membership
 	* all names should use CamelCase
