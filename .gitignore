@@ -1,4 +1,9 @@
+Toroid/Toroid/Debug/*
 Toroid/Debug/*
+
+*.opensdf
+*.sdf
+*.suo
 
 # Compiled source #
 ###################
