@@ -37,17 +37,17 @@ Coding Style:
 	* Singletons must have _Init and _Cleanup even if they do nothing
 * Inter-object communication should go through the event system when at all possible
 	* primary exception being platform dependent communication between subsystems (ex: glWindow raising a keyboard event directly)
-* Enumerations should be of the form:
+* Enumerations should be of the form:  
 
->	typedef EnumName_t
->	{
->		EnumName_Invalid = -1, // optional
->		EnumName_Elem0 = 0,
->		EnumName_Elem1,
->		EnumName_Elem2,
->		// &c.
+>	typedef EnumName_t  
+>	{  
+>		EnumName_Invalid = -1, // optional  
+>		EnumName_Elem0 = 0,  
+>		EnumName_Elem1,  
+>		EnumName_Elem2,  
+>		// &c.  
 >		
->		EnumName_Count
+>		EnumName_Count  
 >	} EnumName;
 
 * naming:
