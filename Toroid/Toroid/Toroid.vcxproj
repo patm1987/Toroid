@@ -78,12 +78,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="glwindow\glwindow.c" />
+    <ClCompile Include="input\keyboard.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="messaging\messaging.c" />
     <ClCompile Include="utils\list.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="glwindow\glwindow.h" />
+    <ClInclude Include="input\keyboard.h" />
     <ClInclude Include="messaging\messages.h" />
     <ClInclude Include="messaging\messaging.h" />
     <ClInclude Include="utils\list.h" />

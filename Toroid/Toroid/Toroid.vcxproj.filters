@@ -14,6 +14,9 @@
     <Filter Include="glwindow">
       <UniqueIdentifier>{24444056-5fa3-463f-b43b-4d2d309ebf53}</UniqueIdentifier>
     </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{5e5cf7eb-1182-49ef-9936-4cf627a54f22}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
@@ -25,6 +28,9 @@
     </ClCompile>
     <ClCompile Include="glwindow\glwindow.c">
       <Filter>glwindow</Filter>
+    </ClCompile>
+    <ClCompile Include="input\keyboard.c">
+      <Filter>input</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +48,9 @@
     </ClInclude>
     <ClInclude Include="glwindow\glwindow.h">
       <Filter>glwindow</Filter>
+    </ClInclude>
+    <ClInclude Include="input\keyboard.h">
+      <Filter>input</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

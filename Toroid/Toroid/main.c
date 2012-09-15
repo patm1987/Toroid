@@ -1,5 +1,8 @@
 
-#include "glwindow\glwindow.h"
+#include "glwindow/glwindow.h"
+
+#include "messaging/messaging.h"
+#include "input/keyboard.h"
 
 void StartUpdateLoop(GlWindow* pWindow);
 
@@ -14,7 +17,10 @@ int main(int argc, char** argv)
 		L"OpenGL",
 		L"GL Test"
 	};
+
+	Messaging_Init();
 	pWindow = GlWindow_Create(&init);
+	Keyboard_Init();
 
 	// 3d context
 	// scene
@@ -25,7 +31,9 @@ int main(int argc, char** argv)
 		StartUpdateLoop(pWindow);
 	}
 
+	Keyboard_Cleanup();
 	GlWindow_Destroy(pWindow);
+	Messaging_Cleanup();
 }
 
 void StartUpdateLoop(GlWindow* pWindow)

@@ -1,6 +1,7 @@
 
 #include "glwindow.h"
 
+#include "../input/keyboard.h"
 #include "../utils/memoryUtils.h"
 
 #include <gl\GL.h>
@@ -293,13 +294,15 @@ LRESULT CALLBACK GlWindow_WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM
 
 	case WM_KEYDOWN:
 		{
-			// key in wParam
+			// TODO: user provided callback
+			Keyboard_keyPressed(wParam);
 			return 0;
 		}
 
 	case WM_KEYUP:
 		{
-			// key in wParam
+			// TODO: user provided callback
+			Keyboard_keyReleased(wParam);
 			return 0;
 		}
 
